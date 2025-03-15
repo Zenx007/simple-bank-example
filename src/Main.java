@@ -1,11 +1,19 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+        ContaBanco cb1 = new ContaBanco ();
+       cb1.setNc( 111);
+       cb1.setDono("Jubileu");
+       cb1.abrirConta("CC");
+       cb1.deposito(300f);
+       cb1.saque(1000f);
+       cb1.Status();
 
-        Caneta c1 = new Caneta("NIC", "AMARELA", 0.4f);
-        c1.status();
+       ContaBanco cb2 = new ContaBanco();
 
-
+        cb2.setNc(222);
+       cb2.setDono("Creusa");
+       cb2.abrirConta("CP");
+       cb2.deposito(500f);
+        cb2.Status();
+        }
     }
-}
